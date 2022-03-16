@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_above="@id/rl_block_identitiy"
+        android:layout_marginBottom="20dp"
+        android:text="Login"
+        android:textSize="45sp"
+
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_block_identitiy"
+        android:background="@drawable/sp_block_identity"
+        android:outlineAmbientShadowColor="@color/black"
+        android:layout_marginRight="70dp"
+        android:layout_centerVertical="true"
+        android:paddingLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_username"
+            android:hint="Username"
+            android:textColorHint="@color/white"
+            android:backgroundTint="@color/hitam_muda"
+            android:drawableLeft="@drawable/ic_baseline_username_24"
+            android:drawablePadding="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+        />
+
+        <View
+            android:id="@+id/v_saparator"
+            android:layout_below="@+id/et_username"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:backgroundTint="@color/hitam_muda"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@id/v_saparator"
+            android:backgroundTint="@color/hitam_muda"
+            android:drawableLeft="@drawable/ic_baseline_passlock_24"
+            android:drawablePadding="30dp"
+            android:hint="******"
+            android:textColorHint="@color/white" />
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/ic_baseline_arrow_forward_24" />
+
+    <TextView
+        android:layout_below="@id/rl_block_identitiy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp"
+        android:text="Forgot?"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_block_identitiy"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="15dp"
+        android:text="belum punya akun?"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_below="@id/rl_block_identitiy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:paddingLeft="20dp"
+        android:text="Register"
+        android:background="@drawable/sp_block_identity_login_button"
+        />
+
+</RelativeLayout>
+
+
